@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Auro Dharmapuram &#8211; Zensark</title>
+	<atom:link href="http://zensark.com/author/auro/feed/" rel="self" type="application/rss+xml" />
+	<link>http://zensark.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 11 Jan 2019 07:10:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.9</generator>
+
+<image>
+	<url>http://zensark.com/wp-content/uploads/2018/08/Oval-8-60x60.png</url>
+	<title>Auro Dharmapuram &#8211; Zensark</title>
+	<link>http://zensark.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Scaling existing products for the new age</title>
+		<link>http://zensark.com/2018/09/06/scaling-existing-products-for-the-new-age/</link>
+		<comments>http://zensark.com/2018/09/06/scaling-existing-products-for-the-new-age/#respond</comments>
+		<pubDate>Thu, 06 Sep 2018 10:29:07 +0000</pubDate>
+		<dc:creator><![CDATA[Auro Dharmapuram]]></dc:creator>
+				<category><![CDATA[DevOps]]></category>
+
+		<guid isPermaLink="false">http://zensark.com/?p=4395</guid>
+		<description><![CDATA[Many product organizations have well established and mature products that generate a lot of value ,...]]></description>
+				<content:encoded><![CDATA[<div>
+<p>Many product organizations have well established and mature products that generate a lot of value , however their traditional monolithic design and tightly coupled architectures mean that the release cycles are long with complex inter dependencies.  The architecture and designs though stable are dated in terms of today’s technological needs and changes.</p>
+<p>&nbsp;</p>
+<p><strong>Do these problems sound familiar to you ?</strong></p>
+<p>1.      Your product has long , 12-18 month product releases.</p>
+<p>2.      More than a dozen scrum teams are trying to deliver one product release by working together</p>
+<p>3.      Lots of interdependencies between components and teams</p>
+<p>4.      Long cycle of Integration and Regression testing towards the end of the cycle after feature completion.</p>
+<p>5.      A production Severity 1 defect, usually causes severe disruption to more than one team. Finding out which component is at fault takes days of debugging.</p>
+<p>6.      The teams are adopting Agile and Scrum but finding it difficult to deliver working software in every sprint despite heroics.</p>
+<p>7.      The only way to get on to the cloud, is to host the entire monolithic product on to a single virtual machine and spin out new virtual machines for every new customer.</p>
+<p>8.      Rewriting the architecture is extremely disruptive and nobody is willing to fund it.</p>
+<p>&nbsp;</p>
+<p><em>If these problems sound familiar , you might find it valuable to read on.</em></p>
+<p>&nbsp;</p>
+<p>First of all, monolithic Applications are not necessarily bad. Ebay, Twitter , Amazon all started with Monolithic architectures and later transformed to more modular &amp; micro service based architectures. Most startups begin with Monolithic architectures and later figure out how to scale.</p>
+<p>The good news is that many of the contemporary successful software product companies in the world have already figured out how to make this transformation. It is a matter of learning from their experiences and applying them. Let us look at some specific steps:</p>
+<p>1.      Adopt a Cloud-Native approach and specifically focus on Functional decomposition. An approach that involves creating highly cohesive loosely coupled sub systems that align closely to business functionality.</p>
+<p>2.      The move to a decoupled architecture will not happen in one go or one release and evolves best over phases, Probably one component at a time.</p>
+<p>3.      Start by Identifying features/components that can be decoupled and function as a service. Once a component is identified for decoupling we should focus on:</p>
+<p><strong>&gt;</strong>  Asynchronous standardized communication between the component and the rest of the product</p>
+<p><strong>&gt; </strong> Storage is local to the component. Shared storage creates dependencies between components.</p>
+<p><strong>&gt;</strong>  Provide and publish a standard API using which other components can connect and make use of this service. The only way to connect to a service should be via its API. There are no backdoor connections.</p>
+<p>4.      Once a component is available as a service , we can gauge how other components are using it and align accordingly based on their requirements.</p>
+<p>5.      Once this exercise is successful , Pick a new component in the next iteration to convert into an independent service</p>
+<p>&nbsp;</p>
+<p>By adopting the above strategy, we eventually create components that are completely self reliant and offer a unique and valuable service to other components within the product. The team that owns a service, owns it end-to-end and is completely accountable while being able to maintain a certain level of autonomy in terms of the internal technology choices on how to build their service and scale it. Automation also becomes easier as the team has complete control and any external services can be virtualized. Lastly but importantly, The team can work in a truly Agile manner.</p>
+<p>We have only scratched the surface on topic in this article. To Dig deeper , Here is some useful further reading and viewing to understand better on how to move a product from Monolithic to Microservices architecture.</p>
+<p>&nbsp;</p>
+<ul>
+<li><a href="http://www.ustream.tv/recorded/61479577" target="_blank" rel="noopener nofollow">Randy Shoup: Monoliths to Microservices</a> , tech talk Video.</li>
+<li><a href="https://pivotal.io/cloud-native" target="_blank" rel="noopener nofollow">A cloud Native approach</a> by Pivotal</li>
+<li><a href="http://itrevolution.com/devops-handbook" target="_blank" rel="noopener nofollow">The DevOps Handbook</a> by Gene Kim, Jez Humble, Patrick Debois, and  John Willis</li>
+</ul>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://zensark.com/2018/09/06/scaling-existing-products-for-the-new-age/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
